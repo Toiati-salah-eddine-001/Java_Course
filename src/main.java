@@ -219,5 +219,20 @@ public class main  {
 //        int number = 10;
 //
 //        String evenOrOdd = (number % 2 == 0) ? "EVEN" : "ODD";
+
+//        _____________switch case______________
+//        String check="salah";
+//        switch (check){
+//            case "ahmed"->System.out.println("no");
+//            case "khalid"->System.out.println("no");
+//            case "salah"->System.out.println("yes");
+//            default->System.out.println("noooooot");
+//        }
+//        _________________LOgique operator_______
+//        En Java, les opérateurs logiques permettent de combiner ou d'inverser des expressions booléennes, permettant ainsi d'évaluer les conditions ensemble.
+//        (&& pour « et », || pour « ou ») ou inversés (! pour « non »)
+
+
+
     }
 }
