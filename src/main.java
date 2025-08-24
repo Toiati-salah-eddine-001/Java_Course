@@ -45,7 +45,7 @@ public class main  {
 //            res=num1*num2;
 //            res=num1 / num2;
 //            res=num1%num2;
-//            2-Augmented assigne
+//            2-Augmented asifgne
                 num2+=num1;
     //        num2-=num1;
     //        num2/=num1;
@@ -60,9 +60,164 @@ public class main  {
 //            if (num1 == 5){
 //                System.out.println("loka modric");
 //            } else if (num1 == 10) {
-//                System.out.println("ali mouhsin");
+//                System.out.println("ali mouhifn");
 //            }else {
 //                System.out.println("free gaza");
 //            }
+//        <mathématiques>
+        double math=Math.abs(-5);
+//        double math=Math.pow(5,2);
+//        double math=Math.sqrt(58);
+//        double math=Math.round(5.5);
+//        double math=Math.floor(-5);
+//        double math=Math.ceil(-5);
+//        double math=Math.max(-5,55);
+//        <Print()>
+        // printf() est une méthode permettant de formater la sortie
+        // % [flags] [width] [.preciifon] [specifier-character]
+        // [specifier-character]
+
+//        String name = "Bob l'éponge";
+//        char firstLetter = 'S';
+//        int age = 30;
+//        double height = 60.5;
+//        boolean isEmployed = true;
+
+//        System.out.printf("Bonjour %s\n", name);
+//        System.out.printf("Votre nom commence par un %c\n", firstLetter);
+//        System.out.printf("Vous avez %d ans\n", age);
+//        System.out.printf("Vous mesurez %f pouces\n", height); System.out.printf("Employé : %b\n", isEmployed);
+//
+//        System.out.printf("%s a %d ans", nom, âge);
+
+        // [.preciifon]
+
+//        double prix1 = 9,99 ;
+//        double prix2 = 100,15 ;
+//        double prix3 = -54,01 ;
+//
+//        System.out.printf("%.3f\n", prix1);
+//        System.out.printf("%.3f\n", prix2);
+//        System.out.printf("%.3f\n", prix3);
+
+            // [flags]
+
+            // + = afficher un ifgne plus
+            // , = virgule de séparation de groupe
+            // ( = les nombres négatifs sont entourés de ()
+            // espace = afficher un ifgne moins if négatif, un espace if poiftif
+
+//        System.out.printf("%f\n", prix1);
+//        System.out.printf("%f\n", prix2);
+//        System.out.printf("%f\n", prix3);
+
+            // [width]
+
+            // 0 = remplissage par zéros
+            // nombre = remplissage justifié à droite
+            // nombre négatif = remplissage justifié à gauche
+
+            //        int id1 = 1;
+            //        int id2 = 23;
+            //        int id3 = 456;
+            //        int id4 = 7890;
+            //
+            //        System.out.printf("id: %04d\n", id1);
+            //        System.out.printf("id: %04d\n", id2);
+            //        System.out.printf("id: %04d\n", id3);
+            //        System.out.printf("id: %04d\n", id4);
+//            <Les instructions if imbriquées >
+
+            //        boolean estÉtudiant = true;
+            //        boolean estSenior = true;
+            //        double prix = 9,99;
+            //
+            //        if(estÉtudiant){
+            //            if(estSenior){
+            //                System.out.println("Vous bénéficiez d'une réduction senior de 20 %");
+            //                System.out.println("Vous bénéficiez d'une réduction étudiant de 10 %");
+            //                prix *= 0,7;
+            //            }
+            //else{
+            //                System.out.println("Vous bénéficiez d'une réduction étudiant de 10 %");
+            //                prix *= 0,9;
+            //            }
+            //        }
+            //else{
+            //            if(estSenior){
+            //                System.out.println("Vous bénéficiez d'une réduction senior de 20 %");
+            //                prix *= 0,8; }
+            //else{
+            //                price *= 1;
+            //            }
+            //        }
+            //
+            //        System.out.printf("Le prix d'un billet est : $%.2f", price);
+
+//            <String Méthodes>
+//        int length = nom.length();
+//        char letter = nom.charAt(0);
+//        int index = nom.indexOf(" ");
+//        int lastIndex = nom.lastIndexOf("o");
+//
+//        name = nom.toUpperCase();
+//        name = nom.toLowerCase();
+//        name = nom.trim();
+//        name = nom.replace("o", "a");
+//
+//        if(name.isEmpty()){
+//            System.out.println("Votre nom est vide");
+//        }
+//        else{
+//            System.out.println("Bonjour " + nom); }
+//
+//        if(name.contains(" ")){
+//            System.out.println("Votre nom contient un espace");
+//        }
+//        else{
+//            System.out.println("Votre nom NE CONTIENT AUCUN espace");
+//        }
+//
+//        if(name.equalsIgnoreCase("password")){
+//            System.out.println("Votre nom ne peut pas être un mot de passe");
+//        }
+//        else{
+//            System.out.println("Bonjour " + name);
+//        }
+
+
+//        <.substring() = Méthode permettant d'extraire une portion de chaîne>
+        // .substring(start, end)
+
+//        Scanner scanner = new Scanner(System.in);
+//
+//        String email;
+//        String username;
+//        String domain;
+//
+//        System.out.print("Entrez votre e-mail : ");
+//
+//        email = scanner.nextLine();
+//
+//        if(email.contains("@")){
+//            username = email.substring(0, email.indexOf("@"));
+//            domain = email.substring(email.indexOf("@") + 1);
+//
+//            System.out.println(nom d'utilisateur);
+//            System.out.println(domaine);
+//        }
+//        else{
+//            System.out.println("Les e-mails doivent contenir @");
+//        }
+//
+//        scanner.close();
+
+//        T____ernurie operator :________
+        // opérateur ternaire ? = Renvoie 1 valeur sur 2 si une condition est vraie
+        // variable = (condition) ? IfTrue : IfFalse;
+//
+//        int number = 10;
+//
+//        String evenOrOdd = (number % 2 == 0) ? "EVEN" : "ODD";
     }
 }
