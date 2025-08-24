@@ -4,7 +4,7 @@ public class main  {
 //            hello
             System.out.print("hello from java\n");
             System.out.println("yooo");
-//            variable
+//           <variable>
             int x=2;
             double y=5.222;
             char a='A';
@@ -15,7 +15,7 @@ public class main  {
             System.out.println("the char is "+a);
             System.out.println("the string is "+z);
             System.out.print("the int is "+isbool);
-//            inputs;
+//           <inputs>;
             Scanner scanner = new Scanner(System.in);
         //  1-for string
             System.out.println("wats your name ");
@@ -36,6 +36,33 @@ public class main  {
             boolean isok = scanner.nextBoolean();
             System.out.println("ok is "+isok);
             scanner.close();
-
+//            <L'arithmétique>
+            int num1=2;
+            int num2=6;
+            int res;
+            res=num1+num2;
+//            res=num1-num2;
+//            res=num1*num2;
+//            res=num1 / num2;
+//            res=num1%num2;
+//            2-Augmented assigne
+                num2+=num1;
+    //        num2-=num1;
+    //        num2/=num1;
+    //        num2%=num1;
+//        Increment and dec Op
+    //        num2++
+    //        num2--
+    //        num2**
+//            Oeder ==> [(),exp,*,/,+,-]
+            System.out.println(res);
+//            <condition>
+//            if (num1 == 5){
+//                System.out.println("loka modric");
+//            } else if (num1 == 10) {
+//                System.out.println("ali mouhsin");
+//            }else {
+//                System.out.println("free gaza");
+//            }
     }
 }
