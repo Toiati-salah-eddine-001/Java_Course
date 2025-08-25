@@ -1,6 +1,8 @@
+import java.lang.reflect.Array;
 import java.lang.reflect.Method;
 import java.util.Scanner;
 import java.util.Random;
+import java.util.Arrays;
 public class main  {
     static int x = 3; //CLASS
     public static void  main(String[] args){
@@ -271,6 +273,15 @@ public class main  {
 //        -------------------Locale and scoop var -----------
         int x = 1; //LOCAL
         doSomething();
+
+//        -----------------------Array------------------
+        String fruits[] = {"salah","lux","limona"};
+        Arrays.sort(fruits);
+//        Arrays.fill(fruits,"armonica");
+        for(String fruit:fruits){
+            System.out.println(fruit);
+        }
+//        System.out.print(fruit[2]);
     }
     static void doSomething(){
 
