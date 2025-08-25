@@ -1,52 +1,55 @@
+import java.lang.reflect.Method;
 import java.util.Scanner;
+import java.util.Random;
 public class main  {
+    static int x = 3; //CLASS
     public static void  main(String[] args){
 //            hello
-            System.out.print("hello from java\n");
-            System.out.println("yooo");
+//            System.out.print("hello from java\n");
+//            System.out.println("yooo");
 //           <variable>
-            int x=2;
-            double y=5.222;
-            char a='A';
-            String z = "salah";
-            boolean isbool=true;
-            System.out.println("the int is "+x);
-            System.out.println("the double is "+y);
-            System.out.println("the char is "+a);
-            System.out.println("the string is "+z);
-            System.out.print("the int is "+isbool);
+//            int x=2;
+//            double y=5.222;
+//            char a='A';
+//            String z = "salah";
+//            boolean isbool=true;
+//            System.out.println("the int is "+x);
+//            System.out.println("the double is "+y);
+//            System.out.println("the char is "+a);
+//            System.out.println("the string is "+z);
+//            System.out.print("the int is "+isbool);
 //           <inputs>;
-            Scanner scanner = new Scanner(System.in);
+//            Scanner scanner = new Scanner(System.in);
         //  1-for string
-            System.out.println("wats your name ");
-            String name = scanner.nextLine();
+//            System.out.println("wats your name ");
+//            String name = scanner.nextLine();
 //            dont accepte space ;
 //            String name = scanner.next();
-            System.out.println(" your name "+name);
-//            2-for int
-            System.out.println("whats age :");
-            int age = scanner.nextInt();
-            System.out.println("age is "+age);
+//            System.out.println(" your name "+name);
+////            2-for int
+//            System.out.println("whats age :");
+//            int age = scanner.nextInt();
+//            System.out.println("age is "+age);
         //   2-for double
-            System.out.println("whats gpa :");
-            double gpa = scanner.nextDouble();
-            System.out.println("gpa is "+gpa);
+//            System.out.println("whats gpa :");
+//            double gpa = scanner.nextDouble();
+//            System.out.println("gpa is "+gpa);
         //   2-for boolean
-            System.out.println("whats isok :");
-            boolean isok = scanner.nextBoolean();
-            System.out.println("ok is "+isok);
-            scanner.close();
+//            System.out.println("whats isok :");
+//            boolean isok = scanner.nextBoolean();
+//            System.out.println("ok is "+isok);
+//            scanner.close();
 //            <L'arithmétique>
-            int num1=2;
-            int num2=6;
-            int res;
-            res=num1+num2;
+//            int num1=2;
+//            int num2=6;
+//            int res;
+//            res=num1+num2;
 //            res=num1-num2;
 //            res=num1*num2;
 //            res=num1 / num2;
 //            res=num1%num2;
 //            2-Augmented asifgne
-                num2+=num1;
+//                num2+=num1;
     //        num2-=num1;
     //        num2/=num1;
     //        num2%=num1;
@@ -55,7 +58,7 @@ public class main  {
     //        num2--
     //        num2**
 //            Oeder ==> [(),exp,*,/,+,-]
-            System.out.println(res);
+//            System.out.println(res);
 //            <condition>
 //            if (num1 == 5){
 //                System.out.println("loka modric");
@@ -65,7 +68,7 @@ public class main  {
 //                System.out.println("free gaza");
 //            }
 //        <mathématiques>
-        double math=Math.abs(-5);
+//        double math=Math.abs(-5);
 //        double math=Math.pow(5,2);
 //        double math=Math.sqrt(58);
 //        double math=Math.round(5.5);
@@ -231,8 +234,63 @@ public class main  {
 //        _________________LOgique operator_______
 //        En Java, les opérateurs logiques permettent de combiner ou d'inverser des expressions booléennes, permettant ainsi d'évaluer les conditions ensemble.
 //        (&& pour « et », || pour « ou ») ou inversés (! pour « non »)
+// ---------------------- while loop --------------------------
 
+//        String name1 = "";
+//
+//        while(name1.isEmpty()){
+//            System.out.print("Entrez votre nom : ");
+//            name1 = scanner.nextLine();
+//        }
+//        ------------------- random-----------------------
+//          Random ranadom = new Random();
+//          int ran= ranadom.nextInt(1,5);
+//          System.out.println(ran);
+//        -------for loop---Break + continue --------------------
+//        for(int i =0; i <  5;i++){
+//              System.out.println(i);
+//                if(i == 3){
+//                    break;
+//                    continue;
+//                }
+//        }
+//--------------nested loop ------------
+//        for(int i = 0; i < rows; i++){
+//            for(int j = 0; j < columns; j++){
+//                System.out.print(symbol);
+//            }
+//            System.out.println();
+//        }
+//        ------------------Method------------
+        happyBirthday("salah",20);
+        double tst = square(25.3);
+        System.out.println(tst);
+        // -------------overloaded methods = methods that share the same name,------------
+        System.out.println(add(1,2,5));
+        System.out.println(add(1,2));
+//        -------------------Locale and scoop var -----------
+        int x = 1; //LOCAL
+        doSomething();
+    }
+    static void doSomething(){
 
+        int x = 2; //LOCAL
 
+        System.out.println(x);
+    }
+    static int add(int a, int b){
+        return a + b;
+    }
+    static int add(int a, int b,int c){
+        return a + b + c;
+    }
+    static void happyBirthday(String name, int age){
+        System.out.println("Happy Birthday to you!");
+        System.out.printf("Happy Birthday dear %s!\n", name);
+        System.out.printf("You are %d years old!\n", age);
+        System.out.println("Happy Birthday to you!\n");
+    }
+    static double square(double number){
+        return number * number;
     }
 }
