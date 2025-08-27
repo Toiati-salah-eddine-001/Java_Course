@@ -276,12 +276,37 @@ public class main  {
 
 //        -----------------------Array------------------
         String fruits[] = {"salah","lux","limona"};
-        Arrays.sort(fruits);
+        Arrays.sort(fruits  );
 //        Arrays.fill(fruits,"armonica");
         for(String fruit:fruits){
             System.out.println(fruit);
         }
 //        System.out.print(fruit[2]);
+//        <Reserch Table >
+//        Scanner scanner = new Scanner(System.in);
+//
+//        String[] fruits = {"apple", "orange", "banana"};
+//        boolean isFound = false;
+//        String target;
+//
+//        System.out.print("Enter a fruit to search for: ");
+//        target = scanner.nextLine();
+//
+//        for(int i = 0; i < fruits.length; i++){
+//            if(fruits[i].equals(target)){
+//                System.out.println("Element found at index: " + i);
+//                isFound = true;
+//                break;
+//            }
+//        }
+//
+//        if(!isFound){
+//            System.out.println("Element not found in the array");
+//        }
+//
+//        scanner.close();
+
+        System.out.println(average(1, 2, 3, 4));
     }
     static void doSomething(){
 
@@ -304,4 +329,22 @@ public class main  {
     static double square(double number){
         return number * number;
     }
+//    --------------------<VARARGS>-----------------------------
+    // varargs = allow a method to accept a varying # of arguments
+    // makes methods more flexible, no need for overloaded methods
+//    it`s use the array
+static double average(double... numbers){
+
+    double sum = 0;
+
+    if(numbers.length == 0){
+        return 0;
+    }
+
+    for(double number : numbers){
+        sum += number;
+    }
+
+    return sum / numbers.length;
+}
 }
